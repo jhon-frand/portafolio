@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+body{
+    background-image: url(img/mapa2.jpg);
+    background-size: cover;
+}
+P{
+    text-align: center;
+    color: rgb(223, 209, 209);
+    font-size: 50PX;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 830px;
+    height: 500PX;
+    border-left: 5px solid  rgba(97, 187, 194, 0.596);
+    border-bottom: 3px solid rgba(97, 187, 194, 0.596);
+}
+.uno, .dos, .tres, .cuatro, .cinco, .seis{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    background: linear-gradient(rgb(0 0 0), rgb(5, 56, 54), rgb(0, 10, 10));
+    margin-right: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(9, 253, 241, 0.726);
+    border-radius: 5px;
+}
+.container div:hover{
+    background: linear-gradient(rgb(4, 143, 131), rgb(49, 82, 81), rgb(0, 5, 5));
+    box-shadow: 5px 5px 15px rgba(9, 253, 241, 0.726);
+}
+.uno{
+    rotate: -16deg;
+    width: 80px;
+    height: 400px;
+    margin-right: 58px;
+}
+.dos{
+    width: 80px;
+    height: 350px;
+}
+.tres{
+    rotate: 10deg;
+    width: 80px;
+    height: 300px;
+}
+.cuatro{
+    rotate: -4deg;
+    width: 80px;
+    height: 250px;
+}
+.cinco{
+    width: 80px;
+    height: 200px;
+}
+.seis{
+    margin-bottom: -5px;
+    margin-left: 20px;
+    rotate: 90deg;
+    width: 80px;
+    height: 150px;
+}
+  

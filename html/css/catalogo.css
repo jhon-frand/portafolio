@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    font-size: 2,8em;
+    color: white
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.caja {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.caja div{
+    text-align: center;
+    border: solid 1px;
+    margin: 30px;
+    font-size: 2em;
+    background-color: white;
+    transition: 1.5s;
+  
+}
+.caja div:hover{
+    transform: scale(1.1);
+}
+.uno {
+    width: 350px;
+    height: 350px;
+}
+body {
+    background: url(img/init.png) fixed;
+    }
+.btn {
+    background-color: rgb(216, 85, 85);
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border: 10px;
+    margin: 4px 6px;
+    cursor: pointer ;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(126, 29, 29);
+}
+body{
+    background-size: cover;
+}

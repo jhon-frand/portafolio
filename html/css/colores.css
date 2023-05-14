@@ -1,0 +1,32 @@
+.box-1, .box-2, .box-3 {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    color: aliceblue;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.box-1 {
+    background-color: cadetblue;
+}
+.box-2 {
+
+    background-color: rgb(34, 34, 34);
+
+}
+.box-3 {
+
+    background-color: #Aa12B3;
+
+}
+body {
+    background-color: black;
+}
+h1 {
+    color: aliceblue;
+    text-align: center;
+
+}

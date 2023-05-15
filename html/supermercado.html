@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link rel="stylesheet" href="css/supermercado.css">
+    <script src="js/supermercado.js"></script>
+</head>
+<body>
+    <h2>Supermercado EL VECINO</h2>
+    <div class="principal">
+        <div class="box-1">
+    <table>
+        <tr>
+            <td><b>Ficha técnica de Equipo</b></td>
+            <td><b>Especificaciones</b></td>
+        </tr>
+        <tr>
+            <td><p>Nombre del producto</p></td>
+            <td><b>Caja Registradora</b></td>
+        </tr>
+        <tr>
+            <td><p>Versión</p></td>
+            <td><input type="number" id="version1" placeholder="Ingrese el número de la versión"></td>
+        </tr>
+        <tr>
+            <td><p>Valor unitario</p></td>
+            <td><b>240.000$</b></td>
+        </tr>
+        <tr>
+            <td><p>Cantidad</p></td>
+            <td><input type="number" id="cantidad1" placeholder="Ingrese la cantidad de equipos"></td>
+        </tr>
+    </table></div>
+   <div class="box-2">
+    <table>
+        <tr>
+            <td><b>Ficha técnica de Equipo</b></td>
+            <td><b>Especificaciones</b></td>
+        </tr>
+        <tr>
+            <td><p>Nombre del producto</p></td>
+            <td><b>Impresora térmica</b></td>
+        </tr>
+        <tr>
+            <td><p>Versión</p></td>
+            <td><input type="number" id="version2" placeholder="Ingrese el número de la versión"></td>
+        </tr>
+        <tr>
+            <td><p>Valor unitario</p></td>
+            <td><b>310.000$</b></td>
+        </tr>
+        <tr>
+            <td><p>Cantidad</p></td>
+            <td><input type="number" id="cantidad2" placeholder="Ingrese la cantidad de equipos"></td>
+        </tr>
+    </table>
+   </div>
+   <div class="box-3">
+    <table>
+        <tr>
+            <td><b>Ficha técnica de Equipo</b></td>
+            <td><b>Especificaciones</b></td>
+        </tr>
+        <tr>
+            <td><p>Nombre del producto</p></td>
+            <td><b>Lector de códigos</b></td>
+        </tr>
+        <tr>
+            <td><p>Versión</p></td>
+            <td><input type="number" id="version3" placeholder="Ingrese el número de la versión"></td>
+        </tr>
+        <tr>
+            <td><p>Valor unitario</p></td>
+            <td><b>125.000$</b></td>
+        </tr>
+        <tr>
+            <td><p>Cantidad</p></td>
+            <td><input type="number" id="cantidad3" placeholder="Ingrese la cantidad de equipos"></td>
+        </tr>
+    </table>
+   </div>
+   <div class="box-4">
+    <table>
+        <tr>
+            <td><b>Ficha técnica de Equipo</b></td>
+            <td><b>Especificaciones</b></td>
+        </tr>
+        <tr>
+            <td><p>Nombre del producto</p></td>
+            <td><b>Computador</b></td>
+        </tr>
+        <tr>
+            <td><p>Versión</p></td>
+            <td><input type="number" id="version4" placeholder="Ingrese el número de la versión"></td>
+        </tr>
+        <tr>
+            <td><p>Valor unitario</p></td>
+            <td><b>1.285.000$</b></td>
+        </tr>
+        <tr>
+            <td><p>Cantidad</p></td>
+            <td><input type="number" id="cantidad4" placeholder="Ingrese la cantidad de equipos"></td>
+        </tr>
+    </table>
+   </div>
+   <div class="box-5">
+    <table>
+        <tr>
+            <td><b>Ficha técnica de Equipo</b></td>
+            <td><b>Especificaciones</b></td>
+        </tr>
+        <tr>
+            <td><p>Nombre del producto</p></td>
+            <td><b>Impresora de cóodigo</b></td>
+        </tr>
+        <tr>
+            <td><p>Versión</p></td>
+            <td><input type="number" id="version5" placeholder="Ingrese el número de la versión"></td>
+        </tr>
+        <tr>
+            <td><p>Valor unitario</p></td>
+            <td><b>480.000$</b></td>
+        </tr>
+        <tr>
+            <td><p>Cantidad</p></td>
+            <td><input type="number" id="cantidad5" placeholder="Ingrese la cantidad de equipos"></td>
+        </tr>
+    </table>
+   </div>
+   <div class="box-6">
+    <table>
+        <tr>
+            <td><b>Ficha técnica de Equipo</b></td>
+            <td><b>Especificaciones</b></td>
+        </tr>
+        <tr>
+            <td><p>Nombre del producto</p></td>
+            <td><b>Báscula</b></td>
+        </tr>
+        <tr>
+            <td><p>Versión</p></td>
+            <td><input type="number"  id="version6" placeholder="Ingrese el número de la versión"></td>
+        </tr>
+        <tr>
+            <td><p>Valor unitario</p></td>
+            <td><b>789.700$</b></td>
+        </tr>
+        <tr>
+            <td><p>Cantidad</p></td>
+            <td><input type="number" id="cantidad6" placeholder="Ingrese la cantidad de equipos"></td>
+        </tr>
+    </table>
+   </div>
+    </div>
+   <div class="total"> <button class="boton" onclick="verFicha()">Total</button></div>
+    <p id="valor1"></p>
+    <p id="valor2"></p>
+    <p id="valor3"></p>
+    <p id="valor4"></p>
+    <p id="valor5"></p>
+    <p id="valor6"></p>
+    <br> <p id="valor"></p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+.container, .container2, .container3, .container5{
+    width: 800px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 20px auto;
+    display: grid;
+    color: white;
+    font-size: 1.5em;
+    grid-gap: 15px; /* espacio entre divs*/
+}
+.box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.container2{
+    grid-template-columns: 100px 100px 100px 1fr;/* los 100px indican el ancho de las columnas y las veces que yo coloque esos 100px son el número de columnas*/
+    /* fr significa fracción y dependiendo de donde se coloque hace que ocupe el resto del espacio en el contenedor*/
+}
+.container3{
+    grid-template-columns: 1fr repeat(3, 100PX) 1fr;
+    grid-template-rows: 100px 100px;/*los 100px indican el alto de las filas y las veces que coloque esos 100px indican el número de filas*/
+}
+.container4{
+    height: 500px;
+    border: 3px solid black;
+    margin: 20px auto;
+    display: grid;
+    color: white;
+    font-size: 1.5em;
+    grid-gap: 15px; /* espacio entre divs*/
+    grid-template-columns: minmax(300px, auto)300px;
+}
+.container5{
+    grid-template-columns: repeat(4,1fr);
+}
+.minbox{
+    background-color: blueviolet;
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+.minbox2{
+    background-color: blue;
+    grid-row-start:2 ;
+    grid-row-end: 5 ;
+}

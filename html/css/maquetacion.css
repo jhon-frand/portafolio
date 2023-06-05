@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    height: 80px;
+}
+.img-principal{
+    width: 100%;
+    height: 500px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-principal p{
+    font-size: 3em;
+    color: white;
+}
+.box{
+    width: 100%;
+    gap: 40px;
+    margin-top: 30px;
+    display: grid;
+    grid-template: "empty-izq box1 box2 box3 empty-der" 600px
+                    "empty-izq box4 box5 box6 empty-der" 600px/
+                     1fr   400px 400px 400px 1fr;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
+.img-box{
+    background-color: rgb(10, 92, 146);
+    width: 400px;
+    height: 250px;
+}
+.text p{
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 800px) {
+    .img-principal{
+        margin-bottom: 90px;
+    }
+    .box{
+     place-items: center;
+    grid-template: 
+    "empty-izq box1 empty-der" 600px
+    "empty-izq box2 empty-der" 600px
+    "empty-izq box3 empty-der" 600px
+    "empty-izq box4 empty-der" 600px
+    "empty-izq box5 empty-der" 600px
+    "empty-izq box6 empty-der" 600px /
+             1fr 300px 1fr;
+   }
+}

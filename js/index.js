@@ -1,7 +1,7 @@
-let menuHamburguesa = document.getElementById("menuHamburguesa");
-let mainMenu = document.getElementById("mainMenu");
-menuHamburguesa.addEventListener("click",
- function(){
+let menuburguer = document.getElementById("menuburguer");
+let lista = document.getElementById("mainMenu");
+menuburguer.addEventListener("click", 
+function(){
     if (mainMenu.classList.contains("main-menu")){
         mainMenu.classList.add("item")
         mainMenu.classList.remove("main-menu")

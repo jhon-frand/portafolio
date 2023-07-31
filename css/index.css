@@ -11,7 +11,10 @@ nav{
     width: 100%;
     box-shadow: 0px 1px 1px rgba(0, 255, 255, 0.479);
 }
-li{
+.menu-burguer{
+    display: none;
+}
+.item{
     display: inline-block;
     margin-right: 10px;
     padding: 15px;
@@ -146,4 +149,25 @@ h1{
     font-size: 25px;
     margin-right: 10px;
     color: white;
+}
+@media only screen and (max-width : 800px){
+    nav{
+        height: 50px;
+    }
+    .main-menu{
+        display: none;
+    }
+    .item{
+        display: block;
+        border-bottom: 1px solid wheat;
+        text-align: center;
+    }
+    .menu-burguer{
+        display: inline-block;
+    }
+    .fa-bars{
+        color: white;
+        font-size: 35px;
+        margin: 5px 20px
+    }
 }

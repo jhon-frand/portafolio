@@ -55,12 +55,25 @@ nav{
     font-size: 18px;
     margin-top: 20px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .img-principal{
         margin-bottom: 90px;
     }
     .box{
-     place-items: center;
+    place-items: center;
+    grid-template: 
+    "empty-izq box1 box2 empty-der" 600px
+    "empty-izq box3 box4 empty-der" 600px
+    "empty-izq box5 box6 empty-der" 600px /
+         1fr 400px 400px 1fr ;
+   }
+}
+@media only screen and (max-width: 600px) {
+    .img-principal{
+        margin-bottom: 90px;
+    }
+    .box{
+    place-items: center;
     grid-template: 
     "empty-izq box1 empty-der" 600px
     "empty-izq box2 empty-der" 600px

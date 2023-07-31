@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.motocicleta {
+    position: fixed;
+    width: 80%;
+    left: 0;
+    margin-left: 10%;
+    transition: all 1500ms;
+}
+.motocicleta-hidden {
+    position: fixed;
+    width: 80%;
+    left: -100%;
+    margin-left: 10%;
+    transition: all 1500ms;
+}
+.playa{
+    position: fixed;
+    width: 80%;
+    left: 0;
+    margin-left: 10%;
+    transition: all 1500ms;
+}
+.playa-hidden{
+    position: fixed;
+    width: 80%;
+    left: 100%;
+    margin-left: 10%;
+    transition: all 1500ms;
+} 
+.flecha1{
+    position: absolute;
+    top: 350px;
+    left: 10px;
+    cursor: pointer;
+}
+.flecha2{
+    position: absolute;
+    top: 350px;
+    left: 95%;
+    cursor: pointer;
+}

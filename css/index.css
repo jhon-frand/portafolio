@@ -110,6 +110,9 @@ h1{
     color: white;
     text-align: center;
 }
+.tittle{
+    background-color: rgba(0, 0, 0, 0.904);
+}
 .projects{
     height: 400px;
     background-color: rgba(0, 0, 0, 0.904);

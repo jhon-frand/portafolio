@@ -30,7 +30,7 @@ ul{
 }
 .principal{
     width: 100%;
-    height: 950px;
+    height: 980px;
     background-color: rgb(28, 13, 39);
     display: flex;
     justify-content: center;
@@ -46,10 +46,12 @@ ul{
     height: 250px;
     text-align: center;
     color: white;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 .principal div h1{
     font-size: 80px;
+    margin-top: -20px;
+
 }
 .boton{
     width: 180px;
@@ -65,17 +67,51 @@ ul{
     color: rgb(225, 87, 225);
 }
 .segundo{
-    background-color: rgb(67, 5, 125);
-    height: 950px;
+    height: 750px;
     display: block;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(rgb(46, 1, 76), rgba(48, 8, 113, 0.906), black);
+
 }
 .cajas{
     width: 300px;
     height: 300px;
-    background-color: aqua;
+    background-color: rgba(142, 60, 224, 0.18);
     margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+
+}
+.cajas h2,h1,p{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.cajas p{
+    font-size: 20px;
+}
+.cajas h2{
+    font-size: 30px;
+}
+.cajas h1{
+    font-size: 40px;
+}
+.cajas button{
+    background-color: rgb(169, 45, 222);
+    width: 180px;
+    height: 40px;
+    color: white;
+    border-radius: 20px;
+    font-size: 23px;
+    margin: auto;
+}
+.border{
+    border: 2px solid rgb(138, 30, 232);
 }
 .uno{
     width: 100%;
@@ -115,4 +151,84 @@ ul{
 }
 .tittle div h2{
     margin-top: 30px;
+}
+.parrafo h3{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.slider {
+    grid-area: slider;
+    background-color: darkcyan;
+    width: 3120px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    z-index: -10;
+    transition: all 2s;
+}
+.slider-view-1 {
+    left: 0;
+}
+.slider-view-2 {
+    left: -1040px;
+}
+.slider-view-3 {
+    left: -2080px;
+}
+.main-box-slider {
+    width: 100%;
+    display: grid;
+    /* background-color: blue; */
+    grid-template: "empty-left box-slider empty-right" /
+                    1fr        1300px     1fr;
+                    position: relative;
+    z-index: 20;
+}
+.empty-left, .empty-right {
+    background-color: white;
+    z-index: 30;
+}
+.box-slider {
+    grid-area: box-slider;
+    width: 100%;
+    height: 900px;
+    display: grid;
+    grid-template: "arrow-left slider arrow-right" /
+                    130px      1040px 130px;
+    z-index: 20;
+    overflow: hidden;
+}
+.arrow-left {
+    grid-area: arrow-left;
+}
+.arrow-right {
+    grid-area: arrow-right;
+}
+.arrow-left, .arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.slider-1, .slider-2, .slider-3 {
+    width: 1040px;
+    display: flex;
+    justify-content: flex-end;
+}
+.icon-arrow-left, .icon-arrow-right {
+    width: 80px;
+    height: 80px;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    font-size: 2em;
 }

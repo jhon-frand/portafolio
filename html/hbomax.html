@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/hbomax.css">
+    <link rel="stylesheet" href="icons/all.css">
 </head>
 <body>
     <nav>
@@ -13,7 +14,10 @@
             <li class="item suscrib">SUSCRÍBETE AHORA</li>
         </ul>
     </nav>
-    <div class="principal">
+    <video muted autoplay loop>
+        <source src="/html/css/img/video.mp4" type="video/mp4">
+    </video>
+    <div class="principal video-container">
         <div>
             <h1 class="ahorra">AHORRA</h1>
             <h1>3 MESES</h1>
@@ -66,6 +70,7 @@
         <div class="cajas">
             <h2>1 MESES</h2>
             <h1>$24.900.00</h1>
+            <p>Igual a $24.900.00 al mes</p>
             <button>Elige este plan</button>
         </div>
         </div>
@@ -78,26 +83,70 @@
         <div class="empty-left"></div>
         <div class="box-slider">
             <div id="arrowLeft" class="arrow-left">
-                <div class="icon-arrow-left"><</div>
+                <div class="icon-arrow-left">
+                    x
+                </div>
             </div>
             <div id="slider" class="slider-view-1 slider">
                 <div class="slider-1">
-                    <img class="img-slider" src="css/img/fabelman.jpg" alt="Playa">
-                </div>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore possimus ipsum quod a 
+                        fugiat alias non quos omnis in, maiores,
+                         doloribus enim. Accusantium sed laudantium, beatae architecto natus quasi?
+                        </div>
+                        <div class="image">   
+                        <img class="img-slider" src="css/img/fabelman.jpg" alt="Playa">
+                    </div>
+                 </div>
                 <div class="slider-2">
-                <img class="img-slider" src="css/img/flash.jpg" alt="" srcset=""> </div>
-                <div class="slider-3">
-                    <img class="img-slider" src="css/img/nba.jpg" alt="Bote">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore possimus ipsum quod a 
+                        fugiat alias non quos omnis in, maiores,
+                         doloribus enim. Accusantium sed laudantium, beatae architecto natus quasi?
+                        </div>
+                         <div class="image"> 
+                            <img class="img-slider" src="css/img/flash.jpg" alt="" srcset=""> 
+                        </div>
+                 </div>
+                 <div class="slider-3">
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore possimus ipsum quod a 
+                        fugiat alias non quos omnis in, maiores,
+                         doloribus enim. Accusantium sed laudantium, beatae architecto natus quasi?</div>
+                         <div class="image">  
+                            <img class="img-slider" src="css/img/nba.jpg" alt="Bote">
+                       </div>
+                        </div>
                 </div>
-            </div>
             <div class="arrow-right">
                 <div id="arrowRight" class="icon-arrow-right">
                     >
                 </div>
             </div>
-        </div>
         <div class="empty-right"></div>
     </div>
+</div>
+<div class="button-suscribe">
+    <button>SUSCRÍBETE AHORA</button>
+    <h2>Episodios gratis, sin necesidad de suscripción</h2>
+</div>
+<div class="cartelera">
+    <div class="empty-izquierda"></div>
+  <div class="cartelera-slider">
+    <div class="izquierda"><i class="fa-solid fa-circle-arrow-left"></i></div>
+    <div class="slider-movies">
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    <div class="movies"></div>
+    </div>
+    <div class="derecha"><i class="fa-solid fa-circle-arrow-right"></i></div>
+  </div>
+  <div class="empty-derecha"></div>
+</div>
     <script src="js/bancolombia.js"></script>
     
 </body>

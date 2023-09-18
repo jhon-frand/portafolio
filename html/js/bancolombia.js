@@ -37,3 +37,36 @@ arrowLeft.addEventListener("click", function() {
         contSlider--;
     }
 });
+
+
+//barras
+
+let iconChevronRight = document.getElementById("iconChevronRight");
+let iconChevronLeft = document.getElementById("iconChevronLeft");
+let boxCarousel = document.getElementById("boxCarousel");
+let barraSignal1= document.getElementById("barraSignal1");
+let barraSignal2= document.getElementById("barraSignal2");
+let barraSignal3= document.getElementById("barraSignal3");
+
+iconChevronRight.addEventListener("click", function(){
+   if (barraSignal1.classList.contains("barra-signal-current")) {
+    barraSignal1.classList.remove("barra-signal-current");
+    barraSignal2.classList.add("barra-signal-current");
+   } else if(barraSignal2.classList.contains("barra-signal-current")){
+    barraSignal2.classList.remove("barra-signal-current");
+    barraSignal3.classList.add("barra-signal-current");
+   }
+}
+)
+
+iconChevronLeft.addEventListener("click", function(){
+    if (barraSignal3.classList.contains("barra-signal-current")) {
+     barraSignal3.classList.remove("barra-signal-current");
+     barraSignal2.classList.add("barra-signal-current");
+    } else if(barraSignal2.classList.contains("barra-signal-current")){
+     barraSignal2.classList.remove("barra-signal-current");
+     barraSignal1.classList.add("barra-signal-current");
+    }
+ }
+ )
+//segundo slider

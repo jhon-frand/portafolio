@@ -18,7 +18,6 @@ nav{
     border-radius: 20px;
     width: 160px;
     text-align: center;
-    height: 20px;
 }
 li{
     list-style: none;
@@ -190,6 +189,16 @@ ul{
 .slider-view-3 {
     left: -2080px;
 }
+.view-1 {
+
+    left: 0;
+}
+.view-2 {
+    left: -1040px;
+}
+.view-3 {
+    left: -2080px;
+}
 .main-box-slider {
     width: 100%;
     height: 500px;
@@ -240,10 +249,12 @@ ul{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: rgba(59, 3, 65, 0.639);
-    color: rgb(214, 205, 205);
     font-size: 3em;
     margin-top: 180px;
+}
+.icon-arrow-left i, .icon-arrow-right i{
+    color: white;
+    font-size: 40px;
 }
 .img-slider{
     width: 700px;
@@ -272,6 +283,27 @@ ul{
     padding-bottom: 30px;
     background: linear-gradient(rgb(65, 5, 85),rgb(46, 1, 76), rgb(48, 8, 113));
   
+}
+.box-carrusel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.barra-signal-1, .barra-signal-2, .barra-signal-3{
+    background-color: rgb(194, 211, 211);
+    width: 70px;
+    height: 5px;
+    border-radius: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: -50px;
+    z-index: 50;
+}
+.barra-signal-current{
+    background-color: aqua;
+    transition: 2s;
 }
 .button-suscribe button{
     width: 200px;

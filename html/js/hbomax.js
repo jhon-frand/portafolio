@@ -70,3 +70,20 @@ iconChevronLeft.addEventListener("click", function(){
  }
  )
 //segundo slider
+
+const left = document.querySelector('.izquierda')
+const right = document.querySelector('.derecha')
+const slider2 = document.querySelector('.slider-movies') 
+
+left.addEventListener("click", function(){
+    slider2.scrollLeft -= 330
+})
+
+right.addEventListener("click", function(){
+slider2.scrollLeft += 330
+})
+
+
+
+
+

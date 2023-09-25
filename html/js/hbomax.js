@@ -76,11 +76,11 @@ const right = document.querySelector('.derecha')
 const slider2 = document.querySelector('.slider-movies') 
 
 left.addEventListener("click", function(){
-    slider2.scrollLeft -= 330
+    slider2.scrollLeft -= 400
 })
 
 right.addEventListener("click", function(){
-slider2.scrollLeft += 330
+slider2.scrollLeft += 400
 })
 
 

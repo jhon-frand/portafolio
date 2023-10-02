@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(244, 233, 27);
+    display: grid;
+    border-bottom: 1px solid gray;
+    height: 60px;
+    grid-template: "logo input-busqueda hamburguer-menu carrito" /
+                      80px   1fr          50px            50px; 
+}
+.logo{
+    grid-area: logo;
+}
+.logo img{
+    width: 80px;
+}
+.input-busqueda i{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.input-busqueda input{
+    border: none;
+    margin-left: 10px;
+    font-size:16px;
+}
+.input-busqueda{
+    grid-area: input-busqueda;
+    background-color: white;
+    margin-top: 10px;
+    height: 40px;
+    display: flex; justify-content: center; align-items: center;
+    
+}
+.hamburguer-menu{
+    grid-area: hamburguer-menu;
+    display: flex; justify-content: center; align-items: center;
+ }
+.carrito{
+    grid-area: carrito;
+    display: flex; justify-content: center; align-items: center;
+}
+i{
+    font-size: 25px; 
+}

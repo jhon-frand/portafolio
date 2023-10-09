@@ -8,7 +8,7 @@ header{
     border-bottom: 1px solid gray;
     height: 60px;
     grid-template: "logo input-busqueda hamburguer-menu carrito" /
-                      80px   1fr          50px            50px; 
+                      60px   1fr          40px            40px; 
 }
 .logo{
     grid-area: logo;
@@ -43,4 +43,25 @@ header{
 }
 i{
     font-size: 25px; 
+}
+.main-content{
+    display: grid;
+}
+.box-producto{
+    display: grid;
+    height: 300px;
+    background-color: antiquewhite;
+    grid-template: "box-img box-info"/
+                       3fr       4fr ;
+}
+.box-img{
+    grid-area: box-img;
+    background-color: rgb(148, 133, 133);
+}
+.box-info{
+    grid-area: box-info;
+    background-color: rgb(164, 136, 191);
+}
+.img-auto{
+    width: 100%;
 }

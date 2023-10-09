@@ -50,13 +50,14 @@ i{
 .box-producto{
     display: grid;
     height: 300px;
-    background-color: antiquewhite;
     grid-template: "box-img box-info"/
                        3fr       4fr ;
 }
 .box-img{
     grid-area: box-img;
-    background-color: rgb(148, 133, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box-info{
     grid-area: box-info;

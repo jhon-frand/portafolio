@@ -7,6 +7,9 @@ class Automovil {
     }
 };
 
+let auto1 = new Automovil("JEEP", "RUBICON");
+alert ( auto1.marca + " " + auto1.modelo); 
+
 inputBusqueda.addEventListener("keydown", function(event){
     if (event.key == "Enter"){ 
     let mainContent = document.getElementById("mainContent");
@@ -28,6 +31,11 @@ inputBusqueda.addEventListener("keydown", function(event){
     let boxInfo = document.createElement("div");
     boxProducto.appendChild(boxInfo);
     boxInfo.setAttribute("class", "box-info");
+
+    let marca = document.createElement("label");
+    boxInfo.appendChild(marca);
+    let txtNodeMarca = document.createTextNode(auto1.marca + " " + auto1.modelo);
+    marca.appendChild(txtNodeMarca);
 }
 
 });

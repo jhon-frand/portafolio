@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header{
     background-color: rgb(244, 233, 27);
@@ -12,10 +13,12 @@ header{
 }
 .logo{
     grid-area: logo;
+    display: flex; justify-content: center; align-items: center;
 }
 .logo img{
-    width: 80px;
+    width: 60px;
 }
+
 .input-busqueda i{
     font-size: 18px;
     margin-left: 10px;
@@ -49,20 +52,42 @@ i{
 }
 .box-producto{
     display: grid;
-    height: 300px;
+    height: 110px;
+    padding-top: 15px;
+    border-top: 1px solid gray;
     grid-template: "box-img box-info"/
                        3fr       4fr ;
 }
 .box-img{
     grid-area: box-img;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    padding: 5px;
 }
 .box-info{
     grid-area: box-info;
-    background-color: rgb(164, 136, 191);
+    padding: 10px;
 }
 .img-auto{
     width: 100%;
+}
+.marca{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.precio{
+    display: block;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+.icon-heart{
+    color: rgb(10, 168, 230);
+    background-color: rgba(235, 235, 235, 0.775);
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+    left: 120px;
 }

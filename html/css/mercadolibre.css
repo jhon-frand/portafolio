@@ -34,7 +34,9 @@ header{
     margin-top: 10px;
     height: 40px;
     display: flex; justify-content: center; align-items: center;
-    
+}
+.inputSearch{
+    outline: none;
 }
 .hamburguer-menu{
     grid-area: hamburguer-menu;
@@ -45,7 +47,8 @@ header{
     display: flex; justify-content: center; align-items: center;
 }
 i{
-    font-size: 25px; 
+    font-size: 24px; 
+    color: rgba(0, 0, 0, 0.713);
 }
 .main-content{
     display: grid;

@@ -33,9 +33,8 @@ let autos = [auto1, auto2, auto3, auto4];
 
 function cargarVehiculo(auto){
 
- // if (event.key == "Enter"){ 
     let mainContent = document.getElementById("mainContent");
-    //caja producto
+    //caja producto 
     let boxProducto = document.createElement("div");
     mainContent.appendChild(boxProducto);
     boxProducto.setAttribute("class", "box-producto");
@@ -94,7 +93,7 @@ function cargarVehiculo(auto){
     let txtNodeDir = document.createTextNode(auto.direccion)
     direccion.appendChild(txtNodeDir);
     direccion.setAttribute("class", "direccion");
-// }
+
 
 };
 
@@ -168,4 +167,7 @@ inputBusqueda.addEventListener("input", function(event) {
             direccion.appendChild(txtNodeDir);
             direccion.setAttribute("class", "direccion");
 
-        }}});
+        } 
+    }});
+        
+        

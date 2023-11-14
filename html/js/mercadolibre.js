@@ -102,7 +102,7 @@ inputBusqueda.addEventListener("input", function(event) {
     mainContent.innerHTML = ''; // Limpia el contenido anterior
 
     for (let auto of autos) {
-        if (auto.marca.toLowerCase() === userInput) {
+        if (auto.marca.toLowerCase().startsWith(userInput)) {
             // Crea la caja de producto para el auto correspondiente
         
             let mainContent = document.getElementById("mainContent");

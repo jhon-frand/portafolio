@@ -118,3 +118,27 @@ i{
         height: 700px;
     }
 }
+@media only screen and (max-width:400px){
+ .contentSide{
+    display: none;
+ }
+ .icon-heart{
+    color: rgb(10, 168, 230);
+    background-color: rgba(235, 235, 235, 0.775);
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+    left: 120px;
+}
+.box-producto{
+    display: grid;
+    height: 120px;
+    border-top: 1px solid gray;
+}
+.main-content{
+    height: 200px;
+}
+
+};

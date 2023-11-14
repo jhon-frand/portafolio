@@ -12,11 +12,10 @@ class Automovil {
     }
 };
 
-let img1 = "../imagenes/rubicon.jpg";
-let img2 = "../imagenes/mazda.jpg";
-let img3 = "../imagenes/toyota2.jpg";
-let img4 = "../imagenes/bettle2.jpg";
-
+let img1 = "./css/img/rubicon.jpg";
+let img2 = "./css/img/mazda.jpg";
+let img3 = "./css/img/toyota2.jpg";
+let img4 = "./css/img/bettle2.jpg";
 let auto1 = new Automovil("Jeep", "Rubicon", 150000000, 2019, 51000, "Pitalito - Huila", img1 );
 let auto2 = new Automovil("Mazda", "6", 243000000, 2023, 0, "Bogotá DC", img2 );
 let auto3 = new Automovil("Toyota", "xl", 200000000, 2023, 12000, "Cali", img3 );

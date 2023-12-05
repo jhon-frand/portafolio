@@ -1,178 +1,217 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
-header{
-    background-color: rgb(244, 233, 27);
+header {
+    height: 70px;
+    background-color: rgb(245,241,89);
     display: grid;
-    height: 60px;
-    grid-template: "logo input-busqueda hamburguer-menu carrito" /
-                      60px   1fr          40px            40px; 
+    grid-template: "logo box-input-busqueda hamburguer-menu carrito" /
+                    70px 1fr                40px            40px;
 }
-
-.toggle-container {
-    position: relative;
-    margin-top: 10px;
-}
-
-.toggle-input {
-    display: none;
-}
-
-.toggle-label {
-    display: block;
-    width: 50px;
-    height: 30px;
-    background-color: rgb(116, 114, 114);
-    border-radius: 15px;
-    position: relative;
-    cursor: pointer;
-}
-
-.toggle-label:before {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #fff;
-    top: 3px;
-    left: 3px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.toggle-input:checked + .toggle-label:before {
-    transform: translateX(20px);
-}
-.logo{
+.logo {
     grid-area: logo;
-    display: flex; justify-content: center; align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 30px; */
 }
-.logo img{
-    width: 60px;
-}
-
-.input-busqueda i{
-    font-size: 18px;
-    margin-left: 10px;
-}
-.input-busqueda input{
-    border: none;
-    margin-left: 10px;
-    font-size:16px;
-}
-.input-busqueda{
-    grid-area: input-busqueda;
-    background-color: white;
-    margin-top: 10px;
-    height: 40px;
-    display: flex; justify-content: center; align-items: center;
-}
-.inputSearch{
-    outline: none;
-}
-.hamburguer-menu{
-    grid-area: hamburguer-menu;
-    display: flex; justify-content: center; align-items: center;
- }
-.carrito{
-    grid-area: carrito;
-    display: flex; justify-content: center; align-items: center;
-}
-i{
-    font-size: 24px; 
-    color: rgba(0, 0, 0, 0.713);
-}
-.main-content{
-    display: grid;
-}
-.box-producto{
-    display: grid;
-    height: 110px;
-    padding-top: 15px;
-    border-top: 1px solid gray;
-    grid-template: "box-img box-info"/
-                       3fr       4fr ;
-}
-.box-img{
-    grid-area: box-img;
-    display: block;
-    padding: 5px;
-}
-.box-info{
-    grid-area: box-info;
-    padding: 10px;
-}
-.img-auto{
+.img-logo {
     width: 100%;
 }
-.marca{
-    display: block;
-    font-size: 18px;
-    margin-bottom: 3px;
-}
-.precio{
-    display: block;
-    font-weight: 500;
-    font-size: 22px;
-    margin-bottom: 3px;
-}
-
-.icon-heart{
-    color: rgb(10, 168, 230);
-    background-color: rgba(235, 235, 235, 0.775);
-    font-size: 16px;
-    padding: 7px;
-    border-radius: 50%;
-    position: relative;
-    top: -100px;
-    left: 120px;
-}
-.content{
+.box-input-busqueda {
+    grid-area: box-input-busqueda;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media only screen and (max-width:800px){
-    .contentSide{
-        background-color: rgba(128, 128, 128, 0.377);
-        height: 100vh;
-        width: 800px;
-    } 
-    .icon-heart{
-        position: relative;
-        top: -140px;
-        left: 180px;
-    }
-    .box-producto{
-        display: grid;
-        height: 150px;
-        border-top: 1px solid gray;
-    }
-    .main-content{
-        height: 700px;
-    }
+.input-busqueda {
+    border-radius: 15px;
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 1.3em;
 }
-@media only screen and (max-width:400px){
- .contentSide{
-    display: none;
- }
- .icon-heart{
-    color: rgb(10, 168, 230);
-    background-color: rgba(235, 235, 235, 0.775);
-    font-size: 16px;
-    padding: 7px;
-    border-radius: 50%;
-    position: relative;
-    top: -100px;
-    left: 120px;
+.hamburguer-menu {
+    grid-area: hamburguer-menu;
 }
-.box-producto{
+.carrito {
+    grid-area: carrito;
+}
+.icon-header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(48,48,48);
+    font-size: 1.3em;
+}
+.box-filtro {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(220,220,220);
+}
+.box-producto {
     display: grid;
-    height: 120px;
-    border-top: 1px solid gray;
+    grid-template: "box-img   box-info" auto
+                   "linea-div linea-div"/
+                    3fr       4fr;
+    /* height: 200px; */
 }
-.main-content{
-    height: 200px;
+.box-img {
+    grid-area: box-img;
+    position: relative;
 }
+.box-info {
+    grid-area: box-info;
+}
+.linea-div {
+    grid-area: linea-div;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(200,200,200, .5);
+}
+.img-auto {
+    padding: 15px;
+    width: 100%;
+}
+.marca {
+    display: block;
+    font-size:.9em;
+}
+.precio {
+    display: block;
+    font-weight: regular;
+    font-size: 1.3em;
+}
+.info-anyo, .info-kilometros, .info-ciudad {
+    font-size: .7em;
+    color: rgb(96,96,96);
+}
+.box-corazon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: rgba(250,250,250,.8);
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.icon-corazon {
+    color: rgb(59, 148, 249);
+    font-size: 1.1em;
+}
+.filtros-visible {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.filtros-hidden {
+    display: none;
+}
+@media only screen and (min-width: 550px) {
+    .box-producto {
+        font-size: 1.4em;
+    }
+    .marca {
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .main-content {
+        background-color: rgb(235,235,235,.9);
+        display: grid;
+        grid-template: "box-filtro box-productos";
+    }
+    .box-productos {
+        grid-area: box-productos;
+    }
+    .box-filtro {
+        grid-area: box-filtro;
+        width: 200px;
+        height: 100vh;
+    }
+    .box-toggle {
+        margin: 50px 0 0 50px;
+        width: 120px;
+        height: 60px;
+        border-radius: 27px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .box-toggle-off {
+        background-color: rgb(200,200,200);
+    }
+    .box-toggle-on {
+        background-color: rgb(52,131,250);
+    }
+    .button-toggle {
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+        background-color: #fff;
+        padding-left: 3px;
+        position: absolute;
+        transition: left 300ms;
+    }
+    .button-toggle-off {
+        left: 3px;
+    }
+    .button-toggle-on {
+        left: 63px;
+    }
 
-};
+}
+/* Fuentes */
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }

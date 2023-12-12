@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;
+}
+.content{
+    background-color: aqua;
+    width: 90%; 
+}
+.input-porcent{
+    display: flex; width: 200px; gap: 5px;
+}
+.barra-porcent{
+    width: 250px;
+}
+.porcentaje{
+    display: flex; justify-content: center; align-items: center; gap: 30px; 
+    padding: 10px;
+}
+.barra{
+    width: 200px; background-color: blueviolet; height: 20px;
+    transition: width 0.5s;
+}
+.porcent{
+    font-weight: bold;
+}
+.btn-enviar{
+    padding: 15px; font-weight: bold; border-radius: 10px; border: none;
+    background-color: black; color: white;
+}
+.button{
+    padding: 10px;
+}

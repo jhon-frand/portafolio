@@ -140,175 +140,41 @@ boxToggle.addEventListener("click", () => {
     }
 });
 
-// let inputBusqueda = document.getElementById('inputBusqueda');
 
-// class Automovil {
-//     constructor(marca, modelo, precio, año, kms, direccion, imagen){
-//         this.marca = marca;
-//         this.modelo = modelo;
-//         this.precio = precio;
-//         this.año = año;
-//         this.kms = kms;
-//         this.direccion = direccion;
-//         this.imagen = imagen;
-//     }
-// };
+let button = document.getElementById('button');
+let calificacionInput = document.getElementById("calificacion");
+let estrellasContainer = document.getElementById('estrellas');
+let texto = document.getElementById('texto');
 
-// let img1 = "./css/img/rubicon.jpg";
-// let img2 = "./css/img/mazda.jpg";
-// let img3 = "./css/img/toyota2.jpg";
-// let img4 = "./css/img/bettle2.jpg";
-// let auto1 = new Automovil("Jeep", "Rubicon", 150000000, 2019, 51000, "Pitalito - Huila", img1 );
-// let auto2 = new Automovil("Mazda", "6", 243000000, 2023, 0, "Bogotá DC", img2 );
-// let auto3 = new Automovil("Toyota", "xl", 200000000, 2023, 12000, "Cali", img3 );
-// let auto4 = new Automovil("Bettle", "Clasic", 134000000, 2023,5000, "Medellín", img4 );
+button.addEventListener('click', function() {
+    let calificacion = parseFloat(calificacionInput.value);
 
-// let autos = [auto1, auto2, auto3, auto4];
+    // Validar que la calificación esté entre 1 y 5
+    if (calificacion >= 1 && calificacion <= 5) {
+        // Limpiar estrellas actuales
+        estrellasContainer.innerHTML = '';
 
-//     cargarVehiculo(auto1);
-//     cargarVehiculo(auto2);
-//     cargarVehiculo(auto3);
-//     cargarVehiculo(auto4);
+        // Calcular el número de estrellas
+        let numEstrellas = Math.floor(calificacion);
 
+        // Agregar estrellas enteras
+        for (let i = 1; i <= numEstrellas; i++) {
+            let estrella = document.createElement('i');
+            estrella.classList.add('fa-solid', 'fa-star');
+            estrellasContainer.appendChild(estrella);
+        }
 
+        // Agregar estrella fraccionaria si es necesario
+        let parteDecimal = calificacion - numEstrellas;
+        if (parteDecimal > 0) {
+            let estrellaFraccionaria = document.createElement('i');
+            estrellaFraccionaria.classList.add('fa-solid', 'fa-star-half');
+            estrellasContainer.appendChild(estrellaFraccionaria);
+        }
 
-// function cargarVehiculo(auto){
-
-//     let mainContent = document.getElementById("mainContent");
-//     //caja producto 
-//     let boxProducto = document.createElement("div");
-//     mainContent.appendChild(boxProducto);
-//     boxProducto.setAttribute("class", "box-producto");
-//     //caja imagen
-//     let boxImg = document.createElement("div");
-//     boxProducto.appendChild(boxImg);
-//     boxImg.setAttribute("class", "box-img");
-
-//     let imgAuto = document.createElement("img");
-//     boxImg.appendChild(imgAuto);
-//     imgAuto.setAttribute("src", auto.imagen);
-//     imgAuto.setAttribute("class","img-auto");
-
-//     let icon = document.createElement("i");
-//     boxImg.appendChild(icon);
-//     icon.setAttribute("class","icon-heart fa-regular fa-heart");
-
-//     //caja información
-//     let boxInfo = document.createElement("div");
-//     boxProducto.appendChild(boxInfo);
-//     boxInfo.setAttribute("class", "box-info");
-
-//     let marca = document.createElement("label");
-//     boxInfo.appendChild(marca);
-//     let txtNodeMarca = document.createTextNode(auto.marca + " " + auto.modelo);
-//     marca.appendChild(txtNodeMarca);
-//     marca.setAttribute("class", "marca");
-
-//     ///precio
-//     let precio = document.createElement("label");
-//     boxInfo.appendChild(precio);
-
-//     //línea para convertir el número a formato de precio con . en los miles
-//     let precioStr = Intl.NumberFormat("de-DE").format(auto.precio);
-
-
-//     let txtNodePrecio = document.createTextNode("$ "+ precioStr);
-//     precio.appendChild(txtNodePrecio);
-//     precio.setAttribute("class", "precio");
-
-//     let año = document.createElement("label");
-//     boxInfo.appendChild(año);
-//     let txtNodeAño = document.createTextNode(auto.año + " ");
-//     año.appendChild(txtNodeAño);
-//     año.setAttribute("class", "año");
-
-//     let kms = document.createElement("label");
-//     boxInfo.appendChild(kms);
-//     let kmStr = Intl.NumberFormat("de-DE").format(auto.kms);
-//     let txtNodeKm = document.createTextNode(kmStr +" km ");
-//     kms.appendChild(txtNodeKm);
-//     kms.setAttribute("class", "kms");
-
-//     let direccion = document.createElement("label");
-//     boxInfo.appendChild(direccion);
-//     let txtNodeDir = document.createTextNode(auto.direccion)
-//     direccion.appendChild(txtNodeDir);
-//     direccion.setAttribute("class", "direccion");
-
-
-// };
-
-
-// inputBusqueda.addEventListener("input", function(event) {
-//     let userInput = event.target.value.toLowerCase();
-//     mainContent.innerHTML = ''; // Limpia el contenido anterior
-
-//     for (let auto of autos) {
-//         if (auto.marca.toLowerCase().startsWith(userInput)) {
-//             // Crea la caja de producto para el auto correspondiente
-        
-//             let mainContent = document.getElementById("mainContent");
-//             //caja producto
-//             let boxProducto = document.createElement("div");
-//             mainContent.appendChild(boxProducto);
-//             boxProducto.setAttribute("class", "box-producto");
-//             //caja imagen
-//             let boxImg = document.createElement("div");
-//             boxProducto.appendChild(boxImg);
-//             boxImg.setAttribute("class", "box-img");
-        
-//             let imgAuto = document.createElement("img");
-//             boxImg.appendChild(imgAuto);
-//             imgAuto.setAttribute("src", auto.imagen);
-//             imgAuto.setAttribute("class","img-auto");
-        
-//             let icon = document.createElement("i");
-//             boxImg.appendChild(icon);
-//             icon.setAttribute("class","icon-heart fa-regular fa-heart");
-        
-//             //caja información
-//             let boxInfo = document.createElement("div");
-//             boxProducto.appendChild(boxInfo);
-//             boxInfo.setAttribute("class", "box-info");
-        
-//             let marca = document.createElement("label");
-//             boxInfo.appendChild(marca);
-//             let txtNodeMarca = document.createTextNode(auto.marca + " " + auto.modelo);
-//             marca.appendChild(txtNodeMarca);
-//             marca.setAttribute("class", "marca");
-        
-//             ///precio
-//             let precio = document.createElement("label");
-//             boxInfo.appendChild(precio);
-        
-//             //línea para convertir el número a formato de precio con . en los miles
-//             let precioStr = Intl.NumberFormat("de-DE").format(auto.precio);
-        
-        
-//             let txtNodePrecio = document.createTextNode("$ "+ precioStr);
-//             precio.appendChild(txtNodePrecio);
-//             precio.setAttribute("class", "precio");
-        
-//             let año = document.createElement("label");
-//             boxInfo.appendChild(año);
-//             let txtNodeAño = document.createTextNode(auto.año + " ");
-//             año.appendChild(txtNodeAño);
-//             año.setAttribute("class", "año");
-        
-//             let kms = document.createElement("label");
-//             boxInfo.appendChild(kms);
-//             let kmStr = Intl.NumberFormat("de-DE").format(auto.kms);
-//             let txtNodeKm = document.createTextNode(kmStr +" km ");
-//             kms.appendChild(txtNodeKm);
-//             kms.setAttribute("class", "kms");
-        
-//             let direccion = document.createElement("label");
-//             boxInfo.appendChild(direccion);
-//             let txtNodeDir = document.createTextNode(auto.direccion)
-//             direccion.appendChild(txtNodeDir);
-//             direccion.setAttribute("class", "direccion");
-
-//         } 
-//     }});
-        
-        
+        // Mostrar texto de la calificación
+        texto.textContent = 'Calificación: ' + calificacion;
+    } else {
+        alert('La calificación debe estar entre 1 y 5');
+    }
+});
